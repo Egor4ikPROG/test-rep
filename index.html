@@ -23,6 +23,7 @@
         //document.getElementById("form").style.display("none")
         let buy = document.getElementById("buy");
         let order = document.getElementById("order");
+        tg.expand();
         
         buy.addEventListener('click', () => {
             document.getElementById("main").style.display = "none";
@@ -32,6 +33,11 @@
         order.addEventListener('click', () => {
             tg.close();
         });
+
+        let data = {
+            mood: mood
+        }
+        tg.sendData(JSON.stringify(data));
     </script>
 </body>
 </html>
