@@ -12,6 +12,10 @@
         <p>Вот такой вот магазинчик</p>
         <button id="buy">Купить</button>
     </div>
+    <form id="form">
+        <p>Надпись 1</p>
+        <p>Надпись 2</p>
+    </form>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
@@ -19,6 +23,7 @@
         
         buy.addEventListener('click', () => {
             document.getElementById("main").style.display = "none";
+            document.getElementById("form").style.display = "block";
         });
     </script>
 </body>
