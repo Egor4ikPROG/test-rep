@@ -31,7 +31,6 @@
         });
 
         order.addEventListener('click', () => {
-            tg.close();
 
             let mood = document.getElementById("mood").value;
 
@@ -39,6 +38,8 @@
                 mood: mood
             }
             tg.sendData(JSON.stringify(data));
+
+            tg.close();
         });
     </script>
 </body>
