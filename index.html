@@ -32,12 +32,14 @@
 
         order.addEventListener('click', () => {
             tg.close();
-        });
 
-        let data = {
-            mood: mood
-        }
-        tg.sendData(JSON.stringify(data));
+            let mood = document.getElementById("mood").value;
+
+            let data = {
+                mood: mood
+            }
+            tg.sendData(JSON.stringify(data));
+        });
     </script>
 </body>
 </html>
